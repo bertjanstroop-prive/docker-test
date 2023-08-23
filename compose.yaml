@@ -1,5 +1,5 @@
 services:
-  web:
+  custom_software:
     build: .
     volumes:
       - .:/var/software
