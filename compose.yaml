@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/var/software
+    ports:
+      - "1234"
