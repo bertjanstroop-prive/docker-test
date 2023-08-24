@@ -1,13 +1,20 @@
 #include <iostream>
-
+#include "main.h"
 #include "httplib.h"
-
+#include <time.h>
 using namespace std;
 using namespace httplib;
 // HTTP
 httplib::Server svr;
 
 int main(){
+    cout << "starting HTTP" << endl;
+    InitServer();
+    while (true)
+    {
+        usleep(1000);
+        cout << "Sleeping" << endl;
+    }
     
     return 0;
 }
